@@ -51,15 +51,19 @@ What's the advantage of a search engine on blockchain?
 
 1. Truely free, without any track or any register method required. 
 2. No ads at all as you willing. Or you can choose to get reward from enabled ads 
-cheap advertising service.
-repid decentralized search experience.
-3. All msg are encrypted. Keep all details safe.
-4. More business development. (Born from an internal project, and will get cooperation with some other traditional company)
-5. The change on proof will gain more user and support (PoW -> MasterNodes + PoW -> FuncNodes + PoF)
-6. Not scam, official team will always support the project.
-7. More services or applications on the base of decentralized search engine. Like AI assistant, cloud IME(Input Tool), Integrated Web Explorer, VPN or Proxy, custom data Analysis... All will be added into roadmap!
-8. Equal Distribution, No ICO/Presale, No Premine
-...
+3. Cheap advertising service.
+4. Repid decentralized search experience.
+5. All msg are encrypted. Keep all details safe.
+6. More business development. (Born from an internal project, and will get cooperation with some other traditional company)
+7. The change on proof will gain more user and support (PoW -> MasterNodes + PoW -> FuncNodes + PoF)
+8. Not scam, official team will always support the project.
+9. More services or applications on the base of decentralized search engine. Like AI assistant, cloud IME(Input Tool), Integrated Web Explorer, VPN or Proxy, custom data Analysis... All will be added into roadmap!
+10. Equal Distribution, No ICO/Presale, No Premine
+11. Get rid of content censorship, search the real things.
+12. Anyone can visit any where, no bias.
+13. Get bonus when valid searching or ads viewing, best choice for users.
+14. Browser, Client, RemoteNode... - More than one method to get our service
+15.    
 ...
 ...
 ?. More and more
@@ -138,23 +142,23 @@ Search Engine need to get a result from database with the query. It looks same t
 
 1.	Based on Elastic Integrated framework.
 
-Elastic + connector(e2eBridge) + ngind(contract)
+Elastic(Lucene) + connector(e2eBridge) + ngind(contract)
 
 Elasticsearch(Elastic) is a search engine based on Lucene library. It provides a distributed, multitenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents. Elasticsearch is developed in Java and is released as open source under the terms of the Apache License. According to the DB-Engines ranking, Elasticsearch is the most popular enterprise search engine followed by Apache Solr, also based on Lucene.
 
-In this solution, Elastic act as a search engine & local database. And the ngin network just acts as the data conveyor.  
+In this solution, Elastic act as a search engine & local database storage solution providor. And the ngin network just acts as the data conveyor.  
 
 ```
 [WIP]
 ```
 
-2.	Totally New golang design (on the basic of ngind)
+2.	Totally New Design in golang (on the basic of ngind)
 
 Half-done from an internal project.
 
-In this solution, all part will be made on our control. and ngin network will not only work as the data conveyor but do decentralized index, searching tasks. 
+In this solution, all part will be made on our control. and ngin network will not only work as the data conveyor but do decentralized index, searching tasks. Now our internal project is not a blockchain solution but a simple solution for in-site search, but it's portable, scalable, accurate and powerful. We will develop it based on blockchain design and decenteralization idea, extending its ability on service handing capacity, making it combined with current ngind(fork of geth), to get a general internet web search engine. 
 
-```
+``` 
 [WIP]
 ```
 
@@ -181,18 +185,20 @@ Search User: get little reward when they do click (if ads exist) ---------------
 2. Plan #2
 
 ```
-[WIP]
+Miner ---------------------------------------------------------------------------------------------------------- medium
+NodeHolder(ngind) ---------------------------------------------------------------------------------------------- medium
+PoolNodeHolder(ngind+ngPool) ----------------------------------------------------------------------------------- large
 ```
 
 ## How do team get benefit from this project?
 
-diff between posting ads' price and reading ads' reward.
+1. diff between posting ads' price and reading ads' reward.
 
-Professional in-site search/analysis services providing.
+2. Professional in-site search/analysis services providing.
 
-Future peripheral products like AI-Assistant.
+3. Future peripheral products like AI-Assistant.
 
-tips: dev funds is for ngin's develop and market, will not be used for benefit
+NOTICE: dev funds is for ngin's develop and market, will not be used for benefit
 
 ## Community
 
