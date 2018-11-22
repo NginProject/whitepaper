@@ -76,6 +76,8 @@ What's the advantage of a search engine on blockchain?
 
 the main Ngin backend program is called ngind (means Ngin Daemon). It's a fork of geth. As the result, all interfaces like jsonrpc and web3 are similar to the ethereum. So, if need to convert the ethereum components to ngin components, for example, contracts, just need to change all web3 methods' "eth." prefix into "ngin.". 
 
+Some may think changing eth to ngin is unnecessary. Why must we need to modify? We will do a totally new fork of geth, so almost all component, like the jsonrpc module, will be replaced by our version. Also, it’s meaningful that letting users realize that we are ngin rather than ethereum, to remember our ngin brand. 
+
 Therefore, ngin contains almost all ethereum features. Short block time, fully decentralization, smart contracts, relatively transparent transactions,  
 
 ## Tech Spec
@@ -199,6 +201,51 @@ PoolNodeHolder(ngind+ngPool) ---------------------------------------------------
 3. Future peripheral products like AI-Assistant.
 
 NOTICE: dev funds is for ngin's develop and market, will not be used for benefit
+
+## Why don't choose DApp?
+DApp used to be our choose. 
+
+But now it is canceled, because we can not rely on other's chain/ecosystem. Though masternode is no problem on ETH/EOS's chain, but what if FuncNode? what if PoF's spiders & pools? As the result, We think using our public chain would be more free and flexible. 
+
+## Why don't choose Token?
+We are not a finished project, and we dont like excessive marketing without any resource. And some teammates wanna be anonymous. Token is not a good choice.
+
+And We need getting growth with our community. So the road of a Coin is satisfy the needs of us.
+
+## Temporary Algorithm - M00N
+As you know, now we are generating blocks based on Proof of Work. So we need an algorithm to achieve that.
+
+As the result, M00N was born. M00N is an algorithm which frequently change its built-in sub-algorithm.
+
+M00N is a variant of cryptonight, but it takes only 1MB for scratchpad. Besides variant codes on , M00N adds different algorithm into the last "Select hash" step. The default for cryptonight is `0=BLAKE-256 [BLAKE], 1=Groestl-256 [GROESTL], 2=JH-256 [JH], and 3=Skein-256 [SKEIN].`, current version of M00N adds `BMW` algo. And in future the sub-algorithm will be added, replaced, or removed when necessary fork.
+
+```
+// Part of CryptoNight Paper
+                                  |
+                                  V
+                            +----------+
+                            | Keccak-f |
+                            +----------+
+                             |    |
+                 +-----------+    |
+                 |                |
+                 V                V
+          +-------------+  +-------------+
+          | Select hash |->| Chosen hash |
+          +-------------+  +-------------+
+                                  |
+                                  V
+                          +--------------+
+                          | Final result |
+                          +--------------+
+```
+
+When necessary? In our plan, ngin should be mined equally on every machine. So we dislike the GPU mining and make ngin's mining cpu-only. We will start fork when GPU mining appearing. Or there need to change/test some new feature, we will also start a necessary fork. 
+
+
+# Fork?
+Yes, we are ETC fork. Though it appears that ETH is much more powerful, but ETH takes too much historical burden which block us developing.  
+
 
 ## Community
 
