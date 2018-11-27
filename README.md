@@ -1,6 +1,6 @@
 # Ngin: Search Engine Based Ecosystem
 
-Ngin: Engine for future
+![Ngin: Engine for future](./NgSlogan.png)
 
 ## Summary
 
@@ -249,4 +249,4 @@ Yes, we are ETC fork. Though it appears that ETH is much more powerful, but ETH 
 
 ## Community
 
-Discord: https://discord.gg/xxr748Y
+[![Join Discord](https://discordapp.com/assets/34b52b6af57f96d86dd0b48c9e7841f7.png)](https://discord.gg/xxr748Y)
