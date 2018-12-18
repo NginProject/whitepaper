@@ -129,8 +129,11 @@ Finally, combine the two. We can get a more powerful structure.
 
 Search Engine need to get a result from database with the query. It looks same to most website do, but in actual, the Search Engine require more. If you simply use the RDMS like MySQL, MsSQL, the speed of locating the keywords in query will be quite slow - because there is no index on full-text. To speed up, it is a basic knowledge that we need to make a PostingList.
 
-[WIP: intro PostingList]
+The PostingList, the inverted index data structure, is a central component of a typical search engine indexing algorithm. A goal of a search engine implementation is to optimize the speed of the query: find the documents where word X occurs. Once a forward index is developed, which stores lists of words per document, it is next inverted to develop an PostingList. Querying the forward index would require sequential iteration through each document and to each word to verify a matching document. The time, memory, and processing resources to perform such a query are not always technically realistic. Instead of listing the words per document in the forward index, the PostingList data structure is developed which lists the documents per word.
 
+With the PostingList created, the query can now be resolved by jumping to the word ID (via random access) in the PostingList.
+
+In pre-computer times, concordances to important books were manually assembled. These were effectively PostingLists with a small amount of accompanying commentary that required a tremendous amount of effort to produce.
 
 3. Search
 
@@ -142,7 +145,7 @@ Search Engine need to get a result from database with the query. It looks same t
 
 ## Plan
 
-1.	Based on Elastic Integrated framework.
+1. Based on Elastic Integrated framework.
 
 Elastic(Lucene) + connector(e2eBridge) + ngind(contract)
 
@@ -154,7 +157,7 @@ In this solution, Elastic act as a search engine & local database storage soluti
 [WIP]
 ```
 
-2.	Totally New Design in golang (on the basic of ngind)
+2. Totally New Design in golang (on the basic of ngind)
 
 Half-done from an internal project.
 
@@ -243,10 +246,38 @@ M00N is a variant of cryptonight, but it takes only 1MB for scratchpad. Besides 
 When necessary? In our plan, ngin should be mined equally on every machine. So we dislike the GPU mining and make ngin's mining cpu-only. We will start fork when GPU mining appearing. Or there need to change/test some new feature, we will also start a necessary fork. 
 
 
-# Fork?
+# Incentive Mechanism
+What's the difference between peer-to-peer (decentrailized) application and blockchain application? Not only irreversibility, but blockchain's incentive mechanism, which known by us called "Token".
+
+So, yes, ngin will act as a token, either, and ngin is the only coin/token in our network. 
+
+As we known, as the coin, ngins are generated from PoW now, and MN, FuncNode, PoF in future. As the token, ngin will take more jobs to incent each roles in network and also entend the ecosystem with the token Incentive Mechanism.
+
+For example, based on built-in search engine system, we could make a sub engine for paper searching even downloading. As everyone know, the paper downloading is not free in commericial usage, every organization cannot provide a legal free channel to download paper. But we can do commericial collaboration with them and let users pay little ng as the threhold. In this way, most people can get the paper they want with ignorable cost, and the vendor, the paper providor will gain benefit. Not only the vendor, everyone can upload and benefit.
+
+Not only the paper/article searching, but goods searching, Q&A service, more and more area including search element. Ngin Network is much more powerful and universally applicable than we imagine.
+
+## Fork?
 Yes, we are ETC fork. Though it appears that ETH is much more powerful, but ETH takes too much historical burden which block us developing.  
 
+
+# Ngin Specs
+pName: Ngin 
+Ticker: NG 
+Consesus Algo: M00N 
+Block Time: ≈ 13 sec 
+Era Length: 100,000 blocks (~2 weeks) 
+Total Block Reward: ≤ 10 NG
+Total Supply: ≈ 360,000,000 
+P2P Port: 52520
+RPC Port: 52521
+WS Port: 52522
+Premine: NO
+Presale/ICO: NO
+Smart Contract Standards: ERC-20, ERC-223...
 
 ## Community
 
 [![Join Discord](https://discordapp.com/assets/34b52b6af57f96d86dd0b48c9e7841f7.png)](https://discord.gg/xxr748Y)
+
+Twitter: https://twitter.com/NginProject
