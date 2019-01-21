@@ -2,27 +2,27 @@
 
 ![Ngin: Engine for future](./NgSlogan.png)
 
-Search engine is the core of internet. To hug the new century of blockchain and serve every user, we (four members now) decide to build a new search engine based on blockchain technology, and name it "Ngin"(speak as engine).
+Search engine is the core of internet. To hug the new century of blockchain and serve every user, we (four members now) decided to build a new search engine based on blockchain technology, and named it "Ngin" (pronounced as engine).
 
 ## Description
 
 ### Vision
 
-Google search is the most used search engine on the World Wide Web across all platforms. The founders of Ngin want to build one "Google" on blockchain, but with clean, untraceable, portable, convenient, no-ads, even profitable features. And then, due to the transparency of public chain, we will call our community to do more meaningful analysis or AI development based on the anonymous data on chain.
+Google search is the most used search engine on the World Wide Web (WWW) across all platforms. The founders of Ngin want to build one "Google" on the blockchain, but with a clean, untraceable, portable, convenient, ad free, and even profitable features. Due to the transparency of a public blockchain, we will call our community to do more meaningful analysis or AI development based on anonymous data on chain.
 
 ### Technical Introduction
 
-In this chain, the work of every miner is acting as a "search engine spider", aka PoF(Proof of Fetch), the miner will fetch the page infomation from internet websites. While running the mining software, everyone will gather webpage's url & info from a source url which can be desided by miner, and then push them to the "Pool". After pool verified, all the messages will be sent to the blockchain. As a method of proof, we should have directly took the mining rewards to the miners, but the cost in period of fetching is much less than hash calculating, so the rewards would be sent to the FuncNodes first, and then the FuncNodes distributes them. Miners have the right to choose which node to contribute.
+In this chain, the work of every miner is acting as a "search engine spider". Also known as Proof of Fetch (PoF), the miner will fetch the page infomation from websites. While running the mining software, everyone will crawl webpage URLs and information from a source URL. The miner can decide on the source URL and that is push to the "pool". After the pool verifies, all the messages are sent to the blockchain. As proof, we should give mining rewards directly to the miners, but the cost to fetch web site is lower than calculating hashes. So, the rewards are sent to the FuncNodes first, and then the FuncNodes distributes to the miners. Miners decide which node to contribute to.
 
-To get rid of scam on pushing, the blockchain system will check every page and each url & detail by "Pool" nodes. The rule of verification is that the url & page will be sent to FuncNodes, and if passing more than 10 other nodes' check on 10 block, the miner will get more rewards than hashing. So with consistently pushing sites and detail to the chain, they would gain considerable benefit from chain. For more details on our new ecosystem baesd on PoF, please read the "Tech Spec" section.
+To get rid of scam on pushing, the blockchain system will check every URL page and detail using "pool" nodes. The rule of verification is that the URL & page will be sent to FuncNodes. If consensus is reached by 10 other nodes, the miner will receive reward on the 10th block. Consistently pushing sites and detail to the chain, miners will gain considerable benefit from chain. For more details on our new ecosystem baesd on PoF, please read the "Tech Spec" section.
 
-For initialization, we chose the PoW(Proof of Work) at first to gather more attention and build the community. But gradually the every part of daemon(ngind) will be replaced with FuncNodes' code. Now, according to the wishes of the community, we follow the traditional PoW software-infrastructure roadmap. We have published the separated mining software and mining pool. And all features in PoF we would build after the MasterNode Fork.
+To start, we chose Proof of Work (PoW) at first to gather more attention and build the community. Gradually, the daemon (ngind) will be replaced with FuncNodes' code. The community asked for a traditional PoW software-infrastructure roadmap. We have published separate mining and mining pool software. All features in PoF will be built after the MasterNode Fork.
 
-For users, who just want to search rather than join project, they can freely search what they want like using google. For people who want to do more and gain more, they can use their token which are from mining to get more advanced search function. What’s the search function? For example, history webpage view, searching in a limited time range, more reliable or user-friendly answer, and so on.
+For users, who just want to search rather than join project, they can freely search using Google™. For people who want to do more and gain more, they can use our token (gained from mining) to get more advanced search function. What's the search function? For example, history webpage view, searching in a limited time range, more reliable or user-friendly answer, and so on.
 
-Due to the future development of a search engine on blockchain, we DO NOT choose to host on any existing public chain. So we decide to build on floor. As the result, it maybe takes a lot of time and capital from our team. But we would afford all pressure on the way, and try our best to produre a new kingdom like Google.
+Due to the future development of a search engine on blockchain, we **DID NOT** choose to host on any existing public chain. We build our own from the ground up. As a result, it may take a lot more time and capital from our team. We hope to live up to an impossible standard and try our best to produce a new kingdom like Google™.
 
-Also, to be like Google, we would build more services and provide api for vendors after the mainnet. Everyone would be able to connect to the new blockchain world through our Ngin.
+Also, to be like Google™, we would build more services and provide API for vendors after the mainnet. Everyone would be able to connect to the new blockchain world through our Ngin.
 
 ```simple_struct
 
@@ -55,46 +55,48 @@ Also, to be like Google, we would build more services and provide api for vendor
 
 What's the advantage of a search engine on blockchain?
 
-1. Truely free, without any track or any register method required.
-2. No ads at all as you willing. Or you can choose to get reward from enabled ads.
+1. Truely free, without any tracking or registration required.
+2. Ad free. Or you can choose to receive rewards for enabling ads.
 3. Cheap advertising service.
-4. Repid decentralized search experience.
-5. All msg are encrypted. Keep all details safe.
+4. Rapid decentralized search experience.
+5. All messages are encrypted. Keep all details safe.
 6. More business development. (Born from an internal project, and will get cooperation with some other traditional company)
 7. The change on proof will gain more user and support (PoW -> MasterNodes + PoW -> FuncNodes + PoF)
 8. Not scam, official team will always support the project.
-9. More services or applications on the base of decentralized search engine. Like AI assistant, cloud IME(Input Tool), Integrated Web Explorer, VPN or Proxy, custom data Analysis... All will be added into roadmap!
+9. More services or applications on the base of decentralized search engine. Like AI assistant, cloud IME (Input Tool), Integrated Web Explorer, VPN or Proxy, custom data Analysis... All will be added into roadmap!
 10. Equal Distribution, No ICO/Presale, No Premine
-11. Get rid of content censorship, search the real things.
+11. Get rid of content censorship, search without limitations. 
 12. Anyone can visit any where, no bias.
 13. Get bonus when valid searching or ads viewing, best choice for users.
 14. Browser, Client, RemoteNode... - More than one method to get our service.
 
 ### Incentive Mechanism
 
-What's the difference between peer-to-peer (decentrailized) application and blockchain application? Not only irreversibility, but blockchain's incentive mechanism, which known by us called "Token".
+What's the difference between peer-to-peer (decentralized) application and blockchain application? Not only irreversibility, but blockchain's incentive mechanism, which we called "token".
 
 So, yes, ngin will act as a token, either, and ngin is the only coin/token in our network.
 
-As we known, as the coin, ngins are generated from PoW now, and MN, FuncNode, PoF in future. As the token, ngin will take more jobs to incent each roles in network and also entend the ecosystem with the token Incentive Mechanism.
+As a coin, ngins are generated from PoW now. In the future, we will add masternodes (MN) to PoW. Lastly, migrate from PoW to FuncNodes and Proof of Fetch (PoF). As a token, ngin will take more jobs to incentivize each role in network and also extend the ecosystem with the token Incentive Mechanism.
 
-For example, based on built-in search engine system, we could make a sub engine for paper searching even downloading. As everyone know, the paper downloading is not free in commericial usage, every organization cannot provide a legal free channel to download paper. But we can do commericial collaboration with them and let users pay little ng as the threhold. In this way, most people can get the paper they want with ignorable cost, and the vendor, the paper providor will gain benefit. Not only the vendor, everyone can upload and benefit.
+For example, based on built-in search engine system, we could make a sub engine for paper searching and even downloading. As everyone know, the paper downloading is not free for commercial usage. Every organization cannot provide a legal free channel to download paper. But we can do commercial collaboration with them and let users pay ngin for the download. Most people can get the paper they want with neglible cost, and as the vendor, the paper provider will gain benefit. Uploading papers is not only availableto vendors, but everyone can uplaod papers and benefit.
 
 Not only the paper/article searching, but goods searching, Q&A service, more and more area including search element. Ngin Network is much more powerful and universally applicable than we imagine.
 
-
-
 ### Backend Detail
 
-the main Ngin backend program is called ngind (means Ngin Daemon). It's a fork of geth. As the result, all interfaces like jsonrpc and web3 are similar to the ethereum. So, if need to convert the ethereum components to ngin components, for example, contracts, just need to change all web3 methods' "eth." prefix into "ngin.".
+The main Ngin backend program is called ngind (means Ngin Daemon). It is a fork of geth. As the result, all interfaces like JSONRPC and Web3 are similar to Ethereum™. So, if we need to convert the ethereum components to ngin components, such as contracts, we just need to change all web3 methods `eth` prefix to `ngin`.
 
-Some may think changing eth to ngin is unnecessary. Why must we need to modify? We will do a totally new fork of geth, so almost all component, like the jsonrpc module, will be replaced by our version. Also, it’s meaningful that letting users realize that we are ngin rather than ethereum, to remember our ngin brand.
+Some may think changing eth to ngin is unnecessary. Why must we need to modify? We will do a totally new fork of geth, so almost all component, like the JSONRPC module, will be replaced by our version. Also, it is meaningful to let  users realize that we are ngin rather than Ethereum™ to promote our ngin brand.
 
-Therefore, ngin contains almost all ethereum features. Short block time, fully decentralization, smart contracts, relatively transparent transactions,  
+To reiterate, ngin contains almost all ethereum features:
+- Short block time,
+- fully decentralization,
+- smart contracts,
+- relatively transparent transactions.  
 
 ## Tech Spec
 
-What's the components of Search Engine?
+What's are the components of Search Engine?
 
 ### Spider (Fetch & Update)
 
